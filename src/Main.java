@@ -1,21 +1,12 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
- class Main {
-    public static void main(String[] args) {
-        Bike bike1 = new Bike();
-        bike1.name = "CBZ";
-        bike1.model = "Xyz";
-        bike1.makeyear = 1994;
+class Main{
+    public static void main(String[] args){
+        Account account=new Account("Chitra Bdr Thapa Chhetri", 1000);
+        double finalAmount=account.depositAmountToAccount( 1000);
+        System.out.println("Your total balance after deposit::"+finalAmount);
+        double finalAmount1=account.withdrawAmountFromAccount(2000);
+        System.out.println("Your total balance after withdraw::"+finalAmount1);
+        account.displayAccountNameAndAmount();
 
-        System.out.println("Bike1:" + bike1.name);
-        System.out.println("Bike1:" + bike1.model);
-        System.out.println("Bike1:" + bike1.makeyear);
 
     }
 }
-        class Bike {
-    String name;
-    String model;
-    int makeyear;
-        }
-
